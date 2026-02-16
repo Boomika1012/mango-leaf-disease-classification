@@ -129,16 +129,6 @@ Intel i5
 
 NVIDIA GPU
 
-📁 **Repository Structure**
-mango-leaf-disease-detection/
-│
-├── baseline_models/
-├── proposed_model/
-├── results/
-├── report/
-│   └── Mango_Leaf_Disease_Report.pdf
-├── README.md
-
 🚀 **Applications**
 
 Precision agriculture
