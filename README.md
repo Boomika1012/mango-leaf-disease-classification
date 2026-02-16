@@ -1,14 +1,14 @@
-🍃 Mango Leaf Disease Detection and Classification
+🍃** Mango Leaf Disease Detection and Classification**
 
 Deep learning–based hybrid framework for automated detection and classification of mango leaf diseases using transfer learning and ensemble machine learning.
 
-📌 Project Overview
+📌** Project Overview**
 
 Mango cultivation is significantly affected by leaf diseases such as Anthracnose, Powdery Mildew, and Bacterial Canker, which reduce crop yield and quality. Manual identification of these diseases is difficult and time-consuming because many diseases exhibit visually similar symptoms.
 
 This project presents an automated image-based disease detection system that classifies mango leaf diseases using deep learning and hybrid machine learning techniques. The proposed framework combines multiple CNN feature extractors with ensemble meta-classifiers to achieve robust and accurate disease recognition.
 
-🎯 Objectives
+🎯 **Objectives**
 
 Detect mango leaf diseases from leaf images
 
@@ -18,7 +18,7 @@ Improve classification accuracy using hybrid deep learning + ensemble ML
 
 Provide an automated decision-support approach for agricultural monitoring
 
-📂 Dataset
+📂** Dataset**
 
 Dataset: MangoLeafBD (Kaggle)
 
@@ -48,8 +48,8 @@ Sooty Mould
 
 Healthy
 
-⚙️ Methodology
-1️⃣ Image Preprocessing
+⚙️** Methodology**
+1️⃣ **Image Preprocessing**
 
 CLAHE contrast enhancement
 
@@ -59,7 +59,7 @@ Background removal and leaf region extraction
 
 Image resizing and normalization
 
-2️⃣ Deep Feature Extraction
+2️⃣ **Deep Feature Extraction**
 
 Transfer learning models used:
 
@@ -71,8 +71,8 @@ DenseNet121
 
 Deep features from all models were extracted and concatenated to form a fused feature representation.
 
-3️⃣ Hybrid Classification
-
+3️⃣** Hybrid Classification
+**
 Ensemble meta-classifier:
 
 XGBoost
@@ -81,7 +81,7 @@ Random Forest
 
 Weighted prediction from both classifiers improved generalization and reduced overfitting.
 
-🧠 Model Architecture
+🧠** Model Architecture**
 Input Image
 → CLAHE + HSV Segmentation
 → CNN Feature Extraction (EfficientNetB0, ResNet50, DenseNet121)
@@ -89,7 +89,7 @@ Input Image
 → XGBoost + Random Forest
 → Disease Prediction
 
-📊 Results
+📊 **Results**
 
 Accuracy: 97.5%
 
@@ -101,7 +101,7 @@ DenseNet121 showed strongest standalone performance
 
 Ensemble classification improved final prediction robustness
 
-🖥️ Implementation
+🖥️ **Implementation**
 
 Language: Python 3.10
 
@@ -129,7 +129,7 @@ Intel i5
 
 NVIDIA GPU
 
-📁 Repository Structure
+📁** Repository Structure**
 mango-leaf-disease-detection/
 │
 ├── baseline_models/
@@ -139,7 +139,7 @@ mango-leaf-disease-detection/
 │   └── Mango_Leaf_Disease_Report.pdf
 ├── README.md
 
-🚀 Applications
+🚀** Applications**
 
 Precision agriculture
 
@@ -149,7 +149,7 @@ Smart farming systems
 
 Early disease diagnosis tools
 
-📚 Academic Context
+📚** Academic Context**
 
 This work was carried out as part of the course:
 
@@ -158,12 +158,12 @@ Integrated M.Tech CSE (Data Science)
 Vellore Institute of Technology, Vellore
 October 2025
 
-👩‍💻 Author
+👩‍💻** Author**
 
 Boomika S
 Integrated M.Tech CSE (Data Science)
 VIT Vellore
 
-📜 License
+📜** License**
 
 This project is released under the MIT License.
