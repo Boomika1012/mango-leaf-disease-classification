@@ -4,27 +4,25 @@ Deep learning–based hybrid framework for automated detection and classificatio
 
 📌 Project Overview
 
-Mango cultivation is highly affected by leaf diseases such as Anthracnose, Powdery Mildew, and Bacterial Canker, which reduce crop yield and quality. Manual disease identification is time-consuming and error-prone due to similar visual symptoms across diseases.
+Mango cultivation is significantly affected by leaf diseases such as Anthracnose, Powdery Mildew, and Bacterial Canker, which reduce crop yield and quality. Manual identification of these diseases is difficult and time-consuming because many diseases exhibit visually similar symptoms.
 
-This project proposes an automated deep learning–based system that detects and classifies mango leaf diseases from images using transfer learning and hybrid ensemble classification.
-
-The proposed framework combines multiple CNN feature extractors with machine learning meta-classifiers to achieve high accuracy and robust disease recognition.
+This project presents an automated image-based disease detection system that classifies mango leaf diseases using deep learning and hybrid machine learning techniques. The proposed framework combines multiple CNN feature extractors with ensemble meta-classifiers to achieve robust and accurate disease recognition.
 
 🎯 Objectives
 
-Detect mango leaf diseases from images
+Detect mango leaf diseases from leaf images
 
-Classify leaves into 7 disease categories + healthy
+Classify leaves into seven disease categories and healthy class
 
-Improve accuracy using hybrid deep learning + ML ensemble
+Improve classification accuracy using hybrid deep learning + ensemble ML
 
-Provide automated decision support for agriculture
+Provide an automated decision-support approach for agricultural monitoring
 
 📂 Dataset
 
 Dataset: MangoLeafBD (Kaggle)
 
-4,000 RGB leaf images
+4,000 RGB images
 
 8 classes (7 diseases + healthy)
 
@@ -51,19 +49,19 @@ Sooty Mould
 Healthy
 
 ⚙️ Methodology
-1️⃣ Preprocessing
+1️⃣ Image Preprocessing
 
 CLAHE contrast enhancement
 
-HSV color segmentation
+HSV-based leaf segmentation
 
-Leaf region extraction
+Background removal and leaf region extraction
 
-Image normalization
+Image resizing and normalization
 
 2️⃣ Deep Feature Extraction
 
-Transfer learning models:
+Transfer learning models used:
 
 EfficientNetB0
 
@@ -71,39 +69,37 @@ ResNet50
 
 DenseNet121
 
-Extracted deep features are concatenated into a fused representation.
+Deep features from all models were extracted and concatenated to form a fused feature representation.
 
 3️⃣ Hybrid Classification
 
-Meta-classifier ensemble:
+Ensemble meta-classifier:
 
 XGBoost
 
 Random Forest
 
-Weighted prediction improves generalization and reduces overfitting.
+Weighted prediction from both classifiers improved generalization and reduced overfitting.
 
 🧠 Model Architecture
-
 Input Image
 → CLAHE + HSV Segmentation
-→ CNN Feature Extraction (3 models)
+→ CNN Feature Extraction (EfficientNetB0, ResNet50, DenseNet121)
 → Feature Fusion
-→ XGBoost + RandomForest
+→ XGBoost + Random Forest
 → Disease Prediction
 
 📊 Results
 
 Accuracy: 97.5%
 
-High Precision, Recall, F1-score
+High Precision, Recall, and F1-score across all classes
 
-Robust classification across 8 classes
+Hybrid classifier outperformed individual CNN models
 
-Improved performance over single CNN models
+DenseNet121 showed strongest standalone performance
 
-DenseNet121 showed best individual performance.
-Hybrid classifier further improved final accuracy.
+Ensemble classification improved final prediction robustness
 
 🖥️ Implementation
 
@@ -129,14 +125,13 @@ Hardware:
 
 Intel i5
 
-16GB RAM
+16 GB RAM
 
 NVIDIA GPU
 
 📁 Repository Structure
 mango-leaf-disease-detection/
 │
-├── dataset_sample/
 ├── baseline_models/
 ├── proposed_model/
 ├── results/
@@ -154,16 +149,17 @@ Smart farming systems
 
 Early disease diagnosis tools
 
-📚 Publication / Report
+📚 Academic Context
 
-This work was developed as part of:
+This work was carried out as part of the course:
 
 Technical Answers for Real World Problems (TARP)
 Integrated M.Tech CSE (Data Science)
 Vellore Institute of Technology, Vellore
 October 2025
 
-👩‍💻 Authors
+👩‍💻 Author
+
 Boomika S
 Integrated M.Tech CSE (Data Science)
 VIT Vellore
