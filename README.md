@@ -18,7 +18,7 @@ Improve classification accuracy using hybrid deep learning + ensemble ML
 
 Provide an automated decision-support approach for agricultural monitoring
 
-📂**Dataset**
+📂 **Dataset**
 
 Dataset: MangoLeafBD (Kaggle)
 
@@ -48,7 +48,8 @@ Sooty Mould
 
 Healthy
 
-⚙️**Methodology**
+⚙️ **Methodology**
+
 1️⃣ **Image Preprocessing**
 
 CLAHE contrast enhancement
@@ -71,8 +72,7 @@ DenseNet121
 
 Deep features from all models were extracted and concatenated to form a fused feature representation.
 
-3️⃣**Hybrid Classification
-**
+3️⃣ **Hybrid Classification**
 Ensemble meta-classifier:
 
 XGBoost
@@ -81,7 +81,7 @@ Random Forest
 
 Weighted prediction from both classifiers improved generalization and reduced overfitting.
 
-🧠**Model Architecture**
+🧠 **Model Architecture**
 Input Image
 → CLAHE + HSV Segmentation
 → CNN Feature Extraction (EfficientNetB0, ResNet50, DenseNet121)
@@ -129,7 +129,7 @@ Intel i5
 
 NVIDIA GPU
 
-📁**Repository Structure**
+📁 **Repository Structure**
 mango-leaf-disease-detection/
 │
 ├── baseline_models/
@@ -139,7 +139,7 @@ mango-leaf-disease-detection/
 │   └── Mango_Leaf_Disease_Report.pdf
 ├── README.md
 
-🚀**Applications**
+🚀 **Applications**
 
 Precision agriculture
 
@@ -149,7 +149,7 @@ Smart farming systems
 
 Early disease diagnosis tools
 
-📚**Academic Context**
+📚 **Academic Context**
 
 This work was carried out as part of the course:
 
@@ -158,12 +158,12 @@ Integrated M.Tech CSE (Data Science)
 Vellore Institute of Technology, Vellore
 October 2025
 
-👩‍💻**Author**
+👩‍💻 **Author**
 
 Boomika S
 Integrated M.Tech CSE (Data Science)
 VIT Vellore
 
-📜**License**
+📜 **License**
 
 This project is released under the MIT License.
