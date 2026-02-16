@@ -1,8 +1,8 @@
-🍃** Mango Leaf Disease Detection and Classification**
+🍃**Mango Leaf Disease Detection and Classification**
 
 Deep learning–based hybrid framework for automated detection and classification of mango leaf diseases using transfer learning and ensemble machine learning.
 
-📌** Project Overview**
+📌**Project Overview**
 
 Mango cultivation is significantly affected by leaf diseases such as Anthracnose, Powdery Mildew, and Bacterial Canker, which reduce crop yield and quality. Manual identification of these diseases is difficult and time-consuming because many diseases exhibit visually similar symptoms.
 
